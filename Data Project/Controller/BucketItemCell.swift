@@ -55,15 +55,15 @@ class BucketItemCell: UITableViewCell
     {
         if(currentBucketItem != nil)
         {
-            bucketItemAuthor.text = currentBucketItem.itemAuthor
+            bucketItemSignature.text = currentBucketItem.itemAuthor
             bucketItemText.text = currentBucketItem.itemContents
         }
         else
         {
-            bucketItemAuthor.text = "Author goes here"
+            bucketItemSignature.text = "Author goes here"
             bucketItemText.text = "Bucket item contents here"
         }
         
-        bucketItemSymbol.text = randomEmoji()
+        BucketItemSymbol.text = randomEmoji()
     }
 }
